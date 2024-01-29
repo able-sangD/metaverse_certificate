@@ -59,13 +59,11 @@
         }
 
         .logo {
-            background-color: white;
             position: absolute;
-            top: 10px;
-            /* 상단 여백 조절 */
-            right: 10px;
-            /* 우측 여백 조절 */
-            max-width: 300px;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100px;
             height: auto;
         }
     </style>
@@ -80,18 +78,18 @@
     <div id="container">
         <!-- 셀 2 텍스트를 입력할 input 요소 -->
         <div>
-        <label for="cell2Text">성 명:</label>
-        <input type="text" id="cell2Text">
-    </div>
-    <div>
-        <!-- 셀 4 텍스트를 입력할 input 요소 -->
-        <label for="cell4Text">학 교:</label>
-        <input type="text" id="cell4Text">
+            <label for="cell2Text">성 명:</label>
+            <input type="text" id="cell2Text">
+        </div>
+        <div>
+            <!-- 셀 4 텍스트를 입력할 input 요소 -->
+            <label for="cell4Text">학 교:</label>
+            <input type="text" id="cell4Text">
 
-        <!-- 다음 버튼 -->
+            <!-- 다음 버튼 -->
 
-        <button onclick="goToNextPage()">다음</button>
-    </div>
+            <button onclick="goToNextPage()">다음</button>
+        </div>
     </div>
 
     <script>
