@@ -31,7 +31,7 @@
         }
 
         #container {
-            text-align: center;
+            text-align: left;
             background-color: #ffffff;
             /* 배경색을 흰색으로 설정 */
             padding: 20px;
@@ -59,6 +59,7 @@
         }
 
         .logo {
+            background-color: white;
             position: absolute;
             top: 10px;
             /* 상단 여백 조절 */
@@ -71,22 +72,26 @@
 </head>
 
 <body>
-    <img class = "logo" src="에이블 로고.png" alt="에이블 로고">
+    <img class="logo" src="에이블 로고.png" alt="에이블 로고">
     <img src="초등메타버스 표지.png" alt="초등메타버스 표지">
 
     <h1>에이블 메타버스 방탈출 수료증</h1>
 
     <div id="container">
         <!-- 셀 2 텍스트를 입력할 input 요소 -->
+        <div>
         <label for="cell2Text">성 명:</label>
         <input type="text" id="cell2Text">
-
+    </div>
+    <div>
         <!-- 셀 4 텍스트를 입력할 input 요소 -->
         <label for="cell4Text">학 교:</label>
         <input type="text" id="cell4Text">
 
         <!-- 다음 버튼 -->
+
         <button onclick="goToNextPage()">다음</button>
+    </div>
     </div>
 
     <script>
